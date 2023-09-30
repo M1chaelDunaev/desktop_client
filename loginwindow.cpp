@@ -1,6 +1,7 @@
 #include "loginwindow.h"
 #include "ui_loginwindow.h"
 #include "registrationwindow.h"
+#include "functions.h"
 
 static bool rememberMe_activated = false;
 
@@ -50,6 +51,8 @@ void LoginWindow::on_Sign_in_button_clicked()
         ui->Password_lineEdit->clear();
         return;
     }
+
+    int id = getRemembrance();
 }
 
 
