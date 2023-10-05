@@ -1,23 +1,29 @@
 #ifndef LOGINWINDOW_H
 #define LOGINWINDOW_H
 
-#include <QDialog>
+#include <QWidget>
+#include "mainapplication.h"
+
+class MainApplication;
 
 namespace Ui {
 class LoginWindow;
 }
 
-class LoginWindow : public QDialog
+class LoginWindow : public QWidget
 {
     Q_OBJECT
 
+     Ui::LoginWindow *ui;
+     MainApplication* mainApp;
+
+     void restoreLineEdits();
 public:
-    explicit LoginWindow(QWidget *parent = nullptr);
+     explicit LoginWindow(MainApplication* app);
     ~LoginWindow();
 
 private slots:
-    void on_Close_button_clicked();
-
+    void on_Close_button_clicked() { close();};
 
     void on_Remember_me_button_clicked();
 
@@ -25,8 +31,6 @@ private slots:
 
     void on_Registration_button_clicked();
 
-private:
-    Ui::LoginWindow *ui;
 };
 
 #endif // LOGINWINDOW_H

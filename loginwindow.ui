@@ -122,15 +122,22 @@ color: rgb(255, 255, 255);</string>
    <property name="font">
     <font>
      <family>Segoe UI</family>
-     <pointsize>11</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);
-background-color: rgb(74, 79, 90);</string>
+background-color: rgb(74, 79, 90);
+</string>
+   </property>
+   <property name="text">
+    <string/>
    </property>
    <property name="frame">
     <bool>false</bool>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
    </property>
   </widget>
   <widget class="QLabel" name="Password_label">
@@ -194,12 +201,15 @@ border-radius: 10px;</string>
     <font>
      <family>Segoe UI</family>
      <pointsize>11</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
     </font>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);
-
-background-color: rgb(74, 79, 90);</string>
+background-color: rgb(74, 79, 90);
+font: 11pt &quot;Segoe UI&quot;;</string>
    </property>
    <property name="text">
     <string/>
