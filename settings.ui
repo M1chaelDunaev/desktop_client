@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Settings</class>
+ <widget class="QWidget" name="Settings">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1092</width>
+    <height>465</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1092</width>
+    <height>465</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_2">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QFrame" name="LeftBorder_frame">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>55</width>
+         <height>465</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0.796, x2:0, y2:0.488, stop:0.0681818 rgba(129, 105, 123, 255), stop:0.948864 rgba(90, 96, 110, 255));</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="CentralWidget_groupBox">
+       <property name="minimumSize">
+        <size>
+         <width>980</width>
+         <height>465</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>980</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-color: rgb(55, 225, 255);
+border-left: 0px;
+border-right: 0px;
+border-bottom: 0px;
+border-style: solid;
+border-width: 1px;
+background-color: rgb(70, 73, 85);</string>
+       </property>
+       <property name="title">
+        <string/>
+       </property>
+       <widget class="QPushButton" name="Account_pushButton">
+        <property name="geometry">
+         <rect>
+          <x>1</x>
+          <y>65</y>
+          <width>120</width>
+          <height>35</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>120</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+border: 0px;
+color: rgb(182, 182, 182);
+text-align: left;
+}
+QPushButton:hover{
+border: 0px;
+color: rgb(255, 255, 255);
+background-color: rgb(120, 120, 120);
+text-align: left;
+}</string>
+        </property>
+        <property name="text">
+         <string>       Account</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ChatSettings_pushButton">
+        <property name="geometry">
+         <rect>
+          <x>1</x>
+          <y>100</y>
+          <width>120</width>
+          <height>35</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>120</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+border: 0px;
+color: rgb(182, 182, 182);
+text-align: left;
+}
+QPushButton:hover{
+border: 0px;
+color: rgb(255, 255, 255);
+background-color: rgb(120, 120, 120);
+text-align: left;
+}</string>
+        </property>
+        <property name="text">
+         <string>      Chat settings</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Family_pushButton">
+        <property name="geometry">
+         <rect>
+          <x>1</x>
+          <y>135</y>
+          <width>120</width>
+          <height>35</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>120</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+border: 0px;
+color: rgb(182, 182, 182);
+text-align: left;
+}
+QPushButton:hover{
+border: 0px;
+color: rgb(255, 255, 255);
+background-color: rgb(120, 120, 120);
+text-align: left;
+}</string>
+        </property>
+        <property name="text">
+         <string>      Family</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Security_pushButton">
+        <property name="geometry">
+         <rect>
+          <x>1</x>
+          <y>190</y>
+          <width>120</width>
+          <height>35</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>120</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+border: 0px;
+color: rgb(182, 182, 182);
+text-align: left;
+}
+QPushButton:hover{
+border: 0px;
+color: rgb(255, 255, 255);
+background-color: rgb(120, 120, 120);
+text-align: left;
+}</string>
+        </property>
+        <property name="text">
+         <string>      Security</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Downloads_pushButton">
+        <property name="geometry">
+         <rect>
+          <x>1</x>
+          <y>225</y>
+          <width>120</width>
+          <height>35</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>120</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+border: 0px;
+color: rgb(182, 182, 182);
+text-align: left;
+}
+QPushButton:hover{
+border: 0px;
+color: rgb(255, 255, 255);
+background-color: rgb(120, 120, 120);
+text-align: left;
+}</string>
+        </property>
+        <property name="text">
+         <string>      Downloads</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Notifications_pushButton">
+        <property name="geometry">
+         <rect>
+          <x>1</x>
+          <y>260</y>
+          <width>120</width>
+          <height>35</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>120</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+border: 0px;
+color: rgb(182, 182, 182);
+text-align: left;
+}
+QPushButton:hover{
+border: 0px;
+color: rgb(255, 255, 255);
+background-color: rgb(120, 120, 120);
+text-align: left;
+}</string>
+        </property>
+        <property name="text">
+         <string>      Notifications</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Storage_pushButton">
+        <property name="geometry">
+         <rect>
+          <x>1</x>
+          <y>295</y>
+          <width>120</width>
+          <height>35</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>120</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+border: 0px;
+color: rgb(182, 182, 182);
+text-align: left;
+}
+QPushButton:hover{
+border: 0px;
+color: rgb(255, 255, 255);
+background-color: rgb(120, 120, 120);
+text-align: left;
+}</string>
+        </property>
+        <property name="text">
+         <string>      Storage</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="LogOut_pushButton">
+        <property name="geometry">
+         <rect>
+          <x>1</x>
+          <y>350</y>
+          <width>120</width>
+          <height>35</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>120</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+border: 0px;
+color: rgb(182, 182, 182);
+text-align: left;
+}
+QPushButton:hover{
+border: 0px;
+color: rgb(255, 255, 255);
+background-color: rgb(120, 120, 120);
+	background-color: rgb(206, 20, 20);
+text-align: left;
+}</string>
+        </property>
+        <property name="text">
+         <string>      Log out</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Settings_label">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>81</width>
+          <height>31</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>81</width>
+          <height>31</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border: 0px;
+color:rgb(25, 180, 255);</string>
+        </property>
+        <property name="text">
+         <string>Settings</string>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="CurrentSetting_groupBox">
+        <property name="geometry">
+         <rect>
+          <x>119</x>
+          <y>1</y>
+          <width>861</width>
+          <height>464</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border: 0px;
+background-color: rgb(39, 41, 47);
+</string>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+       </widget>
+       <widget class="Line" name="line">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>180</y>
+          <width>120</width>
+          <height>2</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(39, 41, 47);
+border: 0px;</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>340</y>
+          <width>120</width>
+          <height>2</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(39, 41, 47);
+border: 0px;</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>463</y>
+          <width>120</width>
+          <height>2</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(39, 41, 47);
+border: 0px;</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFrame" name="RightBorder_frame">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>55</width>
+         <height>465</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: qlineargradient(spread:pad, x1:0.108545, y1:0.466, x2:0.584818, y2:0.602, stop:0.0681818 rgba(129, 105, 123, 255), stop:0.948864 rgba(90, 96, 110, 255));</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -5,5 +5,15 @@
         <file>qr.png</file>
         <file>gal.png</file>
         <file>without_gal.png</file>
+        <file>../content.png</file>
+        <file>Elden_Ring.png</file>
+        <file>Cuphead.png</file>
+        <file>DyingLight.png</file>
+        <file>GodOfWar.png</file>
+        <file>Horizon.png</file>
+        <file>PlagueTale.png</file>
+        <file>Stray.png</file>
+        <file>TheLastOfUs.png</file>
+        <file>Warhammer.jpg</file>
     </qresource>
 </RCC>

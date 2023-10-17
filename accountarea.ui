@@ -1,0 +1,1109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AccountArea</class>
+ <widget class="QWidget" name="AccountArea">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1387</width>
+    <height>831</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="Main">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QFrame" name="Left_frame">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>55</width>
+         <height>465</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+background-color: qlineargradient(spread:pad, x1:1, y1:0.796, x2:0, y2:0.488, stop:0.0681818 rgba(129, 105, 123, 255), stop:0.948864 rgba(90, 96, 110, 255));</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QScrollArea" name="scrollArea">
+       <property name="minimumSize">
+        <size>
+         <width>980</width>
+         <height>465</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>980</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-color: rgb(55, 225, 255);
+border-left: 0px;
+border-right: 0px;
+border-bottom: 0px;
+border-style: solid;
+border-width: 1px;
+background-color: qlineargradient(spread:pad, x1:0.29, y1:0.795455, x2:0.880682, y2:0.773, stop:0 rgba(92, 98, 111, 255), stop:1 rgba(70, 75, 85, 255));</string>
+       </property>
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>983</width>
+          <height>810</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_6">
+         <property name="leftMargin">
+          <number>12</number>
+         </property>
+         <property name="topMargin">
+          <number>20</number>
+         </property>
+         <property name="rightMargin">
+          <number>12</number>
+         </property>
+         <property name="bottomMargin">
+          <number>20</number>
+         </property>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <property name="spacing">
+              <number>50</number>
+             </property>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_3">
+               <property name="spacing">
+                <number>25</number>
+               </property>
+               <item>
+                <widget class="QLabel" name="Avatar_label">
+                 <property name="minimumSize">
+                  <size>
+                   <width>167</width>
+                   <height>167</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>167</width>
+                   <height>167</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(255, 255, 255);
+border-color: rgb(55, 225, 255);;
+border-style: solid;
+border-width: 2px</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_2">
+                 <item>
+                  <widget class="QLabel" name="Login_label">
+                   <property name="minimumSize">
+                    <size>
+                     <width>420</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>420</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>22</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);
+border: 0px;</string>
+                   </property>
+                   <property name="text">
+                    <string>Login</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="Infornation_label">
+                   <property name="minimumSize">
+                    <size>
+                     <width>420</width>
+                     <height>100</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>420</width>
+                     <height>100</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);
+border: 0px;</string>
+                   </property>
+                   <property name="text">
+                    <string>Information fadasdasdd  dasdasdasd dasdasd
+Information fadasdasdd  dasdasdasd dasdasd
+Information fadasdasdd  dasdasdasd dasdasd
+Information fadasdasdd  dasdasdasd dasdasd
+</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_3">
+                 <property name="leftMargin">
+                  <number>43</number>
+                 </property>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_2">
+                   <property name="spacing">
+                    <number>12</number>
+                   </property>
+                   <property name="leftMargin">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="Level_label">
+                     <property name="minimumSize">
+                      <size>
+                       <width>70</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>70</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Arial</family>
+                       <pointsize>22</pointsize>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgba(255, 255, 255, 0);
+border: 0px;
+color: rgb(255, 255, 255);</string>
+                     </property>
+                     <property name="text">
+                      <string>Level</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="Level_label_2">
+                     <property name="minimumSize">
+                      <size>
+                       <width>40</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>40</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Arial</family>
+                       <pointsize>22</pointsize>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgba(255, 255, 255, 255);
+border: 0px;
+color: rgb(255, 255, 255);</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">border: 0px;
+background-color: rgba(0, 0, 0, 0);</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_2">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>270</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>270</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">border: 0px;
+background-color: rgba(0, 0, 0, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="EditProfile_pushButton">
+                   <property name="minimumSize">
+                    <size>
+                     <width>270</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>270</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>14</pointsize>
+                    </font>
+                   </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">border: 0px;
+color: rgb(255, 255, 255);
+background-color: rgb(48, 49, 54);</string>
+                   </property>
+                   <property name="text">
+                    <string>Edit profile</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout">
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout">
+                 <property name="spacing">
+                  <number>15</number>
+                 </property>
+                 <item>
+                  <widget class="QLabel" name="RecentActivity_label">
+                   <property name="minimumSize">
+                    <size>
+                     <width>630</width>
+                     <height>35</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>630</width>
+                     <height>35</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>14</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(48, 49, 54);
+color: rgb(182, 182, 182);
+border: 0 px;
+</string>
+                   </property>
+                   <property name="text">
+                    <string> Recent activity:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QGroupBox" name="RA1_groupBox">
+                   <property name="minimumSize">
+                    <size>
+                     <width>630</width>
+                     <height>140</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>630</width>
+                     <height>140</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(255, 255, 255);
+border: 0px;
+background-color: rgb(48, 49, 54);</string>
+                   </property>
+                   <property name="title">
+                    <string/>
+                   </property>
+                   <widget class="QLabel" name="RA1_icon_label">
+                    <property name="geometry">
+                     <rect>
+                      <x>10</x>
+                      <y>9</y>
+                      <width>121</width>
+                      <height>121</height>
+                     </rect>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(255, 255, 255);
+</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                   <widget class="QLabel" name="RA1_name_label">
+                    <property name="geometry">
+                     <rect>
+                      <x>150</x>
+                      <y>9</y>
+                      <width>471</width>
+                      <height>55</height>
+                     </rect>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>5345345</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Arial</family>
+                      <pointsize>14</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+                    </property>
+                    <property name="text">
+                     <string>Registration
+art</string>
+                    </property>
+                   </widget>
+                   <widget class="QLabel" name="RA1_info_label">
+                    <property name="geometry">
+                     <rect>
+                      <x>150</x>
+                      <y>79</y>
+                      <width>471</width>
+                      <height>51</height>
+                     </rect>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Arial</family>
+                      <pointsize>14</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+                    </property>
+                    <property name="text">
+                     <string>ff</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+                    </property>
+                   </widget>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QGroupBox" name="RA2_groupBox">
+                   <property name="minimumSize">
+                    <size>
+                     <width>630</width>
+                     <height>140</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>630</width>
+                     <height>140</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(255, 255, 255);
+border: 0px;
+background-color: rgb(48, 49, 54);</string>
+                   </property>
+                   <property name="title">
+                    <string/>
+                   </property>
+                   <widget class="QLabel" name="RA2_icon_label">
+                    <property name="geometry">
+                     <rect>
+                      <x>10</x>
+                      <y>9</y>
+                      <width>121</width>
+                      <height>121</height>
+                     </rect>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(255, 255, 255);</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                   <widget class="QLabel" name="RA2_name_label">
+                    <property name="geometry">
+                     <rect>
+                      <x>150</x>
+                      <y>9</y>
+                      <width>471</width>
+                      <height>55</height>
+                     </rect>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Arial</family>
+                      <pointsize>14</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+                    </property>
+                    <property name="text">
+                     <string>Registration
+art</string>
+                    </property>
+                   </widget>
+                   <widget class="QLabel" name="RA2_info_label">
+                    <property name="geometry">
+                     <rect>
+                      <x>150</x>
+                      <y>79</y>
+                      <width>471</width>
+                      <height>51</height>
+                     </rect>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Arial</family>
+                      <pointsize>14</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+                    </property>
+                    <property name="text">
+                     <string>ff</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+                    </property>
+                   </widget>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QGroupBox" name="RA3_groupBox">
+                   <property name="minimumSize">
+                    <size>
+                     <width>630</width>
+                     <height>140</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>630</width>
+                     <height>140</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(255, 255, 255);
+border: 0px;
+background-color: rgb(48, 49, 54);</string>
+                   </property>
+                   <property name="title">
+                    <string/>
+                   </property>
+                   <widget class="QLabel" name="RA3_icon_label">
+                    <property name="geometry">
+                     <rect>
+                      <x>10</x>
+                      <y>9</y>
+                      <width>121</width>
+                      <height>121</height>
+                     </rect>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(255, 255, 255);</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                   <widget class="QLabel" name="RA3_name_label">
+                    <property name="geometry">
+                     <rect>
+                      <x>150</x>
+                      <y>9</y>
+                      <width>471</width>
+                      <height>55</height>
+                     </rect>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Arial</family>
+                      <pointsize>14</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+                    </property>
+                    <property name="text">
+                     <string>Registration
+art</string>
+                    </property>
+                   </widget>
+                   <widget class="QLabel" name="RA3_info_label">
+                    <property name="geometry">
+                     <rect>
+                      <x>150</x>
+                      <y>79</y>
+                      <width>471</width>
+                      <height>51</height>
+                     </rect>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Arial</family>
+                      <pointsize>14</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+                    </property>
+                    <property name="text">
+                     <string>ff</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+                    </property>
+                   </widget>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox">
+                 <property name="minimumSize">
+                  <size>
+                   <width>270</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>270</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border: 0px;
+background-color: rgb(48, 49, 54);</string>
+                 </property>
+                 <property name="title">
+                  <string/>
+                 </property>
+                 <widget class="QLabel" name="NetStatus_label">
+                  <property name="geometry">
+                   <rect>
+                    <x>20</x>
+                    <y>20</y>
+                    <width>81</width>
+                    <height>31</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Arial</family>
+                    <pointsize>20</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(55, 225, 255);
+</string>
+                  </property>
+                  <property name="text">
+                   <string>Online</string>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="Signs_label">
+                  <property name="geometry">
+                   <rect>
+                    <x>20</x>
+                    <y>90</y>
+                    <width>71</width>
+                    <height>21</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Arial</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgba(65, 70, 80, 0);
+color: rgb(255, 255, 255);</string>
+                  </property>
+                  <property name="text">
+                   <string>Signs</string>
+                  </property>
+                 </widget>
+                 <widget class="QPushButton" name="Sign1_pushButton">
+                  <property name="geometry">
+                   <rect>
+                    <x>20</x>
+                    <y>120</y>
+                    <width>60</width>
+                    <height>60</height>
+                   </rect>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                 <widget class="QPushButton" name="Sign2_pushButton">
+                  <property name="geometry">
+                   <rect>
+                    <x>100</x>
+                    <y>120</y>
+                    <width>60</width>
+                    <height>60</height>
+                   </rect>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                 <widget class="QPushButton" name="Sign3_pushButton">
+                  <property name="geometry">
+                   <rect>
+                    <x>180</x>
+                    <y>120</y>
+                    <width>60</width>
+                    <height>60</height>
+                   </rect>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(255, 255, 255);</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                 <widget class="QPushButton" name="MyGames_pushButton">
+                  <property name="geometry">
+                   <rect>
+                    <x>20</x>
+                    <y>209</y>
+                    <width>78</width>
+                    <height>31</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Arial</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton
+{
+	background-color: rgba(255, 255, 255, 0);
+	color: rgb(255, 255, 255);
+}
+QPushButton:hover
+{
+	font: 12pt &quot;Arial&quot;;
+	text-decoration: underline;
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>My games</string>
+                  </property>
+                 </widget>
+                 <widget class="QPushButton" name="Inventory_pushButton">
+                  <property name="geometry">
+                   <rect>
+                    <x>20</x>
+                    <y>250</y>
+                    <width>71</width>
+                    <height>31</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Arial</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton
+{
+	background-color: rgba(255, 255, 255, 0);
+	color: rgb(255, 255, 255);
+}
+QPushButton:hover
+{
+	font: 12pt &quot;Arial&quot;;
+	text-decoration: underline;
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Inventory </string>
+                  </property>
+                 </widget>
+                 <widget class="QPushButton" name="Screenshots_pushButton">
+                  <property name="geometry">
+                   <rect>
+                    <x>20</x>
+                    <y>290</y>
+                    <width>91</width>
+                    <height>31</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Arial</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton
+{
+	background-color: rgba(255, 255, 255, 0);
+	color: rgb(255, 255, 255);
+}
+QPushButton:hover
+{
+	font: 12pt &quot;Arial&quot;;
+	text-decoration: underline;
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Screenshots</string>
+                  </property>
+                 </widget>
+                 <widget class="QPushButton" name="Video_pushButton">
+                  <property name="geometry">
+                   <rect>
+                    <x>20</x>
+                    <y>330</y>
+                    <width>48</width>
+                    <height>31</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Arial</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton
+{
+	background-color: rgba(255, 255, 255, 0);
+	color: rgb(255, 255, 255);
+}
+QPushButton:hover
+{
+	font: 12pt &quot;Arial&quot;;
+	text-decoration: underline;
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Video</string>
+                  </property>
+                 </widget>
+                 <widget class="QPushButton" name="Reviews_pushButton">
+                  <property name="geometry">
+                   <rect>
+                    <x>20</x>
+                    <y>370</y>
+                    <width>63</width>
+                    <height>31</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Arial</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton
+{
+	background-color: rgba(255, 255, 255, 0);
+	color: rgb(255, 255, 255);
+}
+QPushButton:hover
+{
+	font: 12pt &quot;Arial&quot;;
+	text-decoration: underline;
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Reviews</string>
+                  </property>
+                 </widget>
+                 <widget class="QPushButton" name="Manuals_pushButton">
+                  <property name="geometry">
+                   <rect>
+                    <x>20</x>
+                    <y>410</y>
+                    <width>65</width>
+                    <height>31</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Arial</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton
+{
+	background-color: rgba(255, 255, 255, 0);
+	color: rgb(255, 255, 255);
+}
+QPushButton:hover
+{
+	font: 12pt &quot;Arial&quot;;
+	text-decoration: underline;
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Manuals</string>
+                  </property>
+                 </widget>
+                 <widget class="QPushButton" name="Illustrations_pushButton">
+                  <property name="geometry">
+                   <rect>
+                    <x>20</x>
+                    <y>450</y>
+                    <width>88</width>
+                    <height>31</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Arial</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton
+{
+	background-color: rgba(255, 255, 255, 0);
+	color: rgb(255, 255, 255);
+}
+QPushButton:hover
+{
+	font: 12pt &quot;Arial&quot;;
+	text-decoration: underline;
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Illustrations</string>
+                  </property>
+                 </widget>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="verticalSpacer">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFrame" name="Right_frame">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>55</width>
+         <height>465</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: qlineargradient(spread:pad, x1:0.869318, y1:0.682, x2:0.148, y2:0.665091, stop:0 rgba(61, 65, 74, 255), stop:1 rgba(95, 77, 90, 255));
+background-color: qlineargradient(spread:pad, x1:0.529, y1:0.403091, x2:0.863727, y2:0.619, stop:0.0681818 rgba(129, 105, 123, 255), stop:0.948864 rgba(90, 96, 110, 255));
+background-color: qlineargradient(spread:pad, x1:0.108545, y1:0.466, x2:0.584818, y2:0.602, stop:0.0681818 rgba(129, 105, 123, 255), stop:0.948864 rgba(90, 96, 110, 255));</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

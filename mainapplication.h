@@ -6,7 +6,9 @@
 #include "loginwindow.h"
 #include "registrationwindow.h"
 #include "registrationwindowfinal.h"
+#include "mainwindow.h"
 #include "useraccount.h"
+
 
 enum class SearchResult
 {
@@ -21,22 +23,30 @@ class MainApplication
     friend class LoginWindow;
     friend class RegistrationWindow;
     friend class RegistrationWindowFinal;
+    friend class MainWindow;
 
     //private members:
     QSqlDatabase* dataBase;
     LoginWindow* logWindow;
     RegistrationWindow* regWindow;
     RegistrationWindowFinal* finregWindow;
+    MainWindow* mainWindow;
+
     UserAccount* buffer;
 
     //private methods:
     void init();
     bool getInitStatus();
+
+    void setRemembrance(int _id);
     int getRemembrance();
+
     void incrementCountOfUsers();
     int getCountOfUsers();
-    void addAdminAccount();
+
     void addAccount();
+
+    QString getHash(const QString& _pass);
 
     QString lineEdit_StyleSheet();
     QString lineEditError_StyleSheet();
@@ -46,10 +56,11 @@ public:
     ~MainApplication();
 
     void exec();
-    void setRemembrance(int _id);
 
     SearchResult findAccount(int& result_id, QString _email, QString _password);
     void addAccount(const UserAccount& _account);
+
+    void showMainWindow();
 
     void showLoginWindow();
     void hideLoginWindow();

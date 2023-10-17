@@ -28,6 +28,7 @@ private slots:
     void on_Close_button_clicked() { close(); };
 
     void on_Registration_button_clicked();
+    void on_GoBack_button_clicked();
 };
 
 #endif // REGISTRATIONWINDOW_H

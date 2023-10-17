@@ -31,10 +31,10 @@
   <widget class="QPushButton" name="Close_button">
    <property name="geometry">
     <rect>
-     <x>658</x>
-     <y>3</y>
-     <width>20</width>
-     <height>20</height>
+     <x>655</x>
+     <y>0</y>
+     <width>25</width>
+     <height>25</height>
     </rect>
    </property>
    <property name="styleSheet">

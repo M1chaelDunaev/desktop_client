@@ -9,26 +9,50 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    accountarea.cpp \
+    community.cpp \
+    editprofile.cpp \
     functions.cpp \
+    library.cpp \
     loginwindow.cpp \
     main.cpp \
     mainapplication.cpp \
+    mainwindow.cpp \
     registrationwindow.cpp \
     registrationwindowfinal.cpp \
-    useraccount.cpp
+    settings.cpp \
+    store.cpp \
+    useraccount.cpp \
+    userarea.cpp
 
 HEADERS += \
+    accountarea.h \
+    community.h \
+    editprofile.h \
     functions.h \
+    library.h \
     loginwindow.h \
     mainapplication.h \
+    mainwindow.h \
     registrationwindow.h \
     registrationwindowfinal.h \
-    useraccount.h
+    settings.h \
+    store.h \
+    useraccount.h \
+    userarea.h
 
 FORMS += \
+    accountarea.ui \
+    community.ui \
+    editprofile.ui \
+    library.ui \
     loginwindow.ui \
+    mainwindow.ui \
     registrationwindow.ui \
-    registrationwindowfinal.ui
+    registrationwindowfinal.ui \
+    settings.ui \
+    store.ui \
+    userarea.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -37,3 +61,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 RESOURCES += \
     source.qrc
+
+DISTFILES +=

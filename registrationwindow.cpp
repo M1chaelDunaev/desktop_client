@@ -97,7 +97,7 @@ void RegistrationWindow::on_Registration_button_clicked()
 
     int none = 0;
     SearchResult res = mainApp->findAccount(none, email, "");
-    if(res == SearchResult::EMAIL_FOUND_RIGHT_PASSWORD || res == SearchResult::EMAIL_FOUND_WRONG_PASSWORD)
+    if(res == SearchResult::EMAIL_FOUND_WRONG_PASSWORD)
     {
         ui->Error_window_label->setText("User with the same email already exists.");
         ui->Email_lineEdit->setStyleSheet(mainApp->lineEditError_StyleSheet());
@@ -113,5 +113,13 @@ void RegistrationWindow::on_Registration_button_clicked()
     hide();
     restoreEnterWidgets();
     mainApp->finregWindow->show();
+}
+
+
+void RegistrationWindow::on_GoBack_button_clicked()
+{
+    restoreEnterWidgets();
+    hide();
+    mainApp->logWindow->show();
 }
 

@@ -1,0 +1,2431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Store</class>
+ <widget class="QWidget" name="Store">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1288</width>
+    <height>1179</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1092</width>
+    <height>465</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="Main">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QVBoxLayout" name="Central">
+     <item>
+      <widget class="QFrame" name="UpperFrame">
+       <property name="minimumSize">
+        <size>
+         <width>1092</width>
+         <height>100</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>120</height>
+        </size>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_8">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="UpperFiller_label">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgba(0, 0, 0, 0);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_7">
+            <item>
+             <widget class="QLabel" name="LeftFiller_label">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>55</width>
+                <height>120</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>120</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(0, 0, 0, 0);</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QWidget" name="SearchMenu_widget" native="true">
+              <property name="minimumSize">
+               <size>
+                <width>980</width>
+                <height>100</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>100</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(0, 0, 0, 0);</string>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_6">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_5">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>16</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <spacer name="horizontalSpacer_2">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>40</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="Wishlist_pushButton">
+                     <property name="minimumSize">
+                      <size>
+                       <width>111</width>
+                       <height>31</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>111</width>
+                       <height>31</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Arial</family>
+                       <pointsize>12</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton
+{
+background-color: qlineargradient(spread:pad, x1:0.676818, y1:0.687, x2:1, y2:1, stop:0 rgba(132, 181, 196, 255), stop:1 rgba(167, 225, 237, 255));
+border-color:rgb(0, 0, 0);
+border-style:solid;
+border-width: 1px;
+color: rgb(255, 255, 255);
+}
+
+QPushButton:hover
+{	
+	color: rgb(0, 0, 0);
+	background-color: rgb(177, 241, 255);
+}</string>
+                     </property>
+                     <property name="text">
+                      <string>WISHLIST</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="Cart_pushButton">
+                     <property name="minimumSize">
+                      <size>
+                       <width>131</width>
+                       <height>31</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>131</width>
+                       <height>31</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Arial</family>
+                       <pointsize>12</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+background-color: qlineargradient(spread:pad, x1:0.516864, y1:0.722, x2:0.852, y2:1, stop:0 rgba(160, 200, 24, 255), stop:1 rgba(188, 238, 13, 255));
+border-color:rgb(0, 0, 0);
+border-style:solid;
+border-width: 1px;
+color: rgb(255, 255, 255);
+}
+QPushButton:hover
+{
+	color: rgb(0, 0, 0);
+	background-color: rgb(208, 255, 39);
+}</string>
+                     </property>
+                     <property name="text">
+                      <string>CART</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <widget class="QWidget" name="BottomPanel_widget" native="true">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0.982955, x2:1, y2:1, stop:0.625 rgba(65, 109, 158, 255), stop:1 rgba(23, 48, 156, 255));</string>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_4">
+                    <property name="spacing">
+                     <number>0</number>
+                    </property>
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                    <item>
+                     <layout class="QHBoxLayout" name="horizontalLayout_3">
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout">
+                        <item>
+                         <widget class="QPushButton" name="YourGames_pushButton">
+                          <property name="minimumSize">
+                           <size>
+                            <width>101</width>
+                            <height>50</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>101</width>
+                            <height>50</height>
+                           </size>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <family>Arial</family>
+                            <pointsize>12</pointsize>
+                            <weight>75</weight>
+                            <bold>true</bold>
+                           </font>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">QPushButton
+{
+color: rgb(255, 255, 255);
+border: 0px;
+background-color: rgba(0, 0, 0, 0);
+}
+QPushButton:hover
+{
+color: rgb(255, 255, 255);
+border: 0px;
+background-color: rgba(0, 0, 0, 0);
+}</string>
+                          </property>
+                          <property name="text">
+                           <string>Your games</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="FriendsGames_pushButton">
+                          <property name="minimumSize">
+                           <size>
+                            <width>121</width>
+                            <height>50</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>121</width>
+                            <height>50</height>
+                           </size>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <family>Arial</family>
+                            <pointsize>12</pointsize>
+                            <weight>75</weight>
+                            <bold>true</bold>
+                           </font>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">color: rgb(255, 255, 255);
+border: 0px;
+background-color: rgba(0, 0, 0, 0);</string>
+                          </property>
+                          <property name="text">
+                           <string>Friends games</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="TopUpBalance_pushButton">
+                          <property name="minimumSize">
+                           <size>
+                            <width>131</width>
+                            <height>50</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>131</width>
+                            <height>50</height>
+                           </size>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <family>Arial</family>
+                            <pointsize>12</pointsize>
+                            <weight>75</weight>
+                            <bold>true</bold>
+                           </font>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">color: rgb(255, 255, 255);
+border: 0px;
+background-color: rgba(0, 0, 0, 0);</string>
+                          </property>
+                          <property name="text">
+                           <string>Top up balance</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="Gifts_pushButton">
+                          <property name="minimumSize">
+                           <size>
+                            <width>51</width>
+                            <height>50</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>51</width>
+                            <height>50</height>
+                           </size>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <family>Arial</family>
+                            <pointsize>12</pointsize>
+                            <weight>75</weight>
+                            <bold>true</bold>
+                           </font>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">color: rgb(255, 255, 255);
+border: 0px;
+background-color: rgba(0, 0, 0, 0);</string>
+                          </property>
+                          <property name="text">
+                           <string>Gifts</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_2">
+                        <property name="spacing">
+                         <number>3</number>
+                        </property>
+                        <property name="leftMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>10</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>0</number>
+                        </property>
+                        <item>
+                         <spacer name="horizontalSpacer">
+                          <property name="orientation">
+                           <enum>Qt::Horizontal</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>40</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                        <item>
+                         <widget class="QLineEdit" name="Search_lineEdit">
+                          <property name="minimumSize">
+                           <size>
+                            <width>210</width>
+                            <height>30</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>210</width>
+                            <height>30</height>
+                           </size>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <family>Arial</family>
+                            <pointsize>12</pointsize>
+                           </font>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">background-color: rgb(85, 159, 204);
+color: rgb(255, 255, 255);
+border: 0px;</string>
+                          </property>
+                          <property name="text">
+                           <string>Search...</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="Search_pushButton">
+                          <property name="minimumSize">
+                           <size>
+                            <width>30</width>
+                            <height>30</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>30</width>
+                            <height>30</height>
+                           </size>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">border: 0px;
+</string>
+                          </property>
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                     </layout>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="RightFiller_label">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>55</width>
+                <height>120</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>120</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(0, 0, 0, 0);</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QScrollArea" name="CentralFrame_scrollArea">
+       <property name="minimumSize">
+        <size>
+         <width>1092</width>
+         <height>205</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QScrollBar:vertical
+{
+width: 12px;
+background-color: rgb(119, 127, 144);
+}
+
+QScrollBar::handle:vertical
+{
+background-color: rgb(119, 127, 144);
+border-radius: 4px;
+}</string>
+       </property>
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1272</width>
+          <height>1320</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(200, 200, 200);
+background-color: qlineargradient(spread:pad, x1:0, y1:0.285, x2:0.846, y2:0.801136, stop:0 rgba(54, 148, 190, 255), stop:1 rgba(51, 77, 122, 255));
+background-color: qlineargradient(spread:pad, x1:0.182, y1:0.0284091, x2:0.307, y2:0.573864, stop:0 rgba(74, 79, 90, 255), stop:1 rgba(125, 134, 152, 255));
+background-color: qlineargradient(spread:pad, x1:0.1025, y1:0.21, x2:0.773, y2:0.982955, stop:0 rgba(64, 75, 85, 255), stop:1 rgba(47, 49, 52, 255));</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_9">
+           <item>
+            <widget class="QWidget" name="Categories_widget" native="true">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>55</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(74, 79, 90);
+background-color: qlineargradient(spread:pad, x1:0.182, y1:0.0284091, x2:0.307, y2:0.573864, stop:0 rgba(74, 79, 90, 255), stop:1 rgba(125, 134, 152, 255));
+background-color: rgba(0, 0, 0, 0);</string>
+             </property>
+             <widget class="QLabel" name="label">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>20</y>
+                <width>101</width>
+                <height>21</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>11</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(122, 164, 199);
+background-color: rgba(0, 0, 0, 0);</string>
+              </property>
+              <property name="text">
+               <string>CATEGORIES</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="pushButton">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>50</y>
+                <width>75</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>9</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+color: rgb(176, 188, 203);
+border: 0px;
+background-color: rgba(0, 0, 0, 0);
+text-align: left;
+}
+QPushButton:hover
+{
+color: rgb(204, 218, 235)
+}</string>
+              </property>
+              <property name="text">
+               <string>Free to Play</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="pushButton_2">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>80</y>
+                <width>75</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>9</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+color: rgb(176, 188, 203);
+border: 0px;
+background-color: rgba(0, 0, 0, 0);
+text-align: left;
+}
+QPushButton:hover
+{
+color: rgb(204, 218, 235)
+}</string>
+              </property>
+              <property name="text">
+               <string>Early Acces</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="pushButton_3">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>110</y>
+                <width>71</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>9</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+color: rgb(176, 188, 203);
+border: 0px;
+background-color: rgba(0, 0, 0, 0);
+text-align: left;
+}
+QPushButton:hover
+{
+color: rgb(204, 218, 235)
+}</string>
+              </property>
+              <property name="text">
+               <string>Action</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="pushButton_4">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>140</y>
+                <width>81</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>9</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+color: rgb(176, 188, 203);
+border: 0px;
+background-color: rgba(0, 0, 0, 0);
+text-align: left;
+}
+QPushButton:hover
+{
+color: rgb(204, 218, 235)
+}</string>
+              </property>
+              <property name="text">
+               <string>Adventure</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="pushButton_5">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>170</y>
+                <width>81</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>9</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+color: rgb(176, 188, 203);
+border: 0px;
+background-color: rgba(0, 0, 0, 0);
+text-align: left;
+}
+QPushButton:hover
+{
+color: rgb(204, 218, 235)
+}</string>
+              </property>
+              <property name="text">
+               <string>Casual</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="pushButton_6">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>200</y>
+                <width>81</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>9</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+color: rgb(176, 188, 203);
+border: 0px;
+background-color: rgba(0, 0, 0, 0);
+text-align: left;
+}
+QPushButton:hover
+{
+color: rgb(204, 218, 235)
+}</string>
+              </property>
+              <property name="text">
+               <string>Indie</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="pushButton_7">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>230</y>
+                <width>81</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>9</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+color: rgb(176, 188, 203);
+border: 0px;
+background-color: rgba(0, 0, 0, 0);
+text-align: left;
+}
+QPushButton:hover
+{
+color: rgb(204, 218, 235)
+}</string>
+              </property>
+              <property name="text">
+               <string>Racing</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="pushButton_8">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>260</y>
+                <width>81</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>9</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+color: rgb(176, 188, 203);
+border: 0px;
+background-color: rgba(0, 0, 0, 0);
+text-align: left;
+}
+QPushButton:hover
+{
+color: rgb(204, 218, 235)
+}</string>
+              </property>
+              <property name="text">
+               <string>RPG</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="pushButton_9">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>290</y>
+                <width>81</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>9</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+color: rgb(176, 188, 203);
+border: 0px;
+background-color: rgba(0, 0, 0, 0);
+text-align: left;
+}
+QPushButton:hover
+{
+color: rgb(204, 218, 235)
+}</string>
+              </property>
+              <property name="text">
+               <string>Simulation</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="pushButton_10">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>320</y>
+                <width>81</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>9</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+color: rgb(176, 188, 203);
+border: 0px;
+background-color: rgba(0, 0, 0, 0);
+text-align: left;
+}
+QPushButton:hover
+{
+color: rgb(204, 218, 235)
+}</string>
+              </property>
+              <property name="text">
+               <string>Strategy</string>
+              </property>
+             </widget>
+            </widget>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <property name="spacing">
+              <number>4</number>
+             </property>
+             <property name="leftMargin">
+              <number>12</number>
+             </property>
+             <property name="rightMargin">
+              <number>12</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="BestGames_label">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>950</width>
+                 <height>100</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>950</width>
+                 <height>100</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Arial</family>
+                 <pointsize>11</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(0, 0, 0, 0);</string>
+               </property>
+               <property name="text">
+                <string>BEST GAMES OF YEAR 2022</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QGridLayout" name="gridLayout">
+               <property name="horizontalSpacing">
+                <number>10</number>
+               </property>
+               <property name="verticalSpacing">
+                <number>20</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="QWidget" name="EldenRing_widget" native="true">
+                 <property name="minimumSize">
+                  <size>
+                   <width>310</width>
+                   <height>390</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>310</width>
+                   <height>390</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-color: rgb(0,0,0);
+border-style:solid;
+border-width: 1px
+
+</string>
+                 </property>
+                 <widget class="QPushButton" name="ER_pushButton">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>310</width>
+                    <height>310</height>
+                   </rect>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border: 0px;
+background-color: rgb(170, 255, 255);</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="source.qrc">
+                    <normaloff>:/Elden_Ring.png</normaloff>:/Elden_Ring.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>310</width>
+                    <height>310</height>
+                   </size>
+                  </property>
+                 </widget>
+                 <widget class="QWidget" name="ER_widget" native="true">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>310</y>
+                    <width>310</width>
+                    <height>80</height>
+                   </rect>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">
+background-color: qlineargradient(spread:reflect, x1:0.529, y1:0.994318, x2:0, y2:0.71, stop:0 rgba(150, 203, 214, 255), stop:1 rgba(108, 148, 160, 255));</string>
+                  </property>
+                  <widget class="QLabel" name="ER_label">
+                   <property name="geometry">
+                    <rect>
+                     <x>10</x>
+                     <y>30</y>
+                     <width>101</width>
+                     <height>21</height>
+                    </rect>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgba(0, 0, 0, 0);
+border:0px;
+color: rgb(255, 255, 255);
+</string>
+                   </property>
+                   <property name="text">
+                    <string>ELDEN RING</string>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="ERPRICE_label">
+                   <property name="geometry">
+                    <rect>
+                     <x>145</x>
+                     <y>20</y>
+                     <width>111</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(119, 125, 145);
+color: rgb(173, 214, 26);
+</string>
+                   </property>
+                   <property name="text">
+                    <string>49.99$</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                  <widget class="QPushButton" name="ERBUY_pushButton">
+                   <property name="geometry">
+                    <rect>
+                     <x>260</x>
+                     <y>20</y>
+                     <width>41</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(160, 200, 24);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </widget>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QWidget" name="GodOfWar_widget" native="true">
+                 <property name="minimumSize">
+                  <size>
+                   <width>310</width>
+                   <height>390</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>310</width>
+                   <height>390</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-color: rgb(0,0,0);
+border-style:solid;
+border-width: 1px
+</string>
+                 </property>
+                 <widget class="QPushButton" name="GOW_pushButton">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>310</width>
+                    <height>310</height>
+                   </rect>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border: 0px;
+background-color: qlineargradient(spread:pad, x1:0.676818, y1:0.687, x2:1, y2:1, stop:0 rgba(132, 181, 196, 255), stop:1 rgba(167, 225, 237, 255));
+</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="source.qrc">
+                    <normaloff>:/GodOfWar.png</normaloff>:/GodOfWar.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>310</width>
+                    <height>310</height>
+                   </size>
+                  </property>
+                 </widget>
+                 <widget class="QWidget" name="GOW_widget" native="true">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>310</y>
+                    <width>310</width>
+                    <height>80</height>
+                   </rect>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: qlineargradient(spread:reflect, x1:0.529, y1:0.994318, x2:0, y2:0.71, stop:0 rgba(150, 203, 214, 255), stop:1 rgba(108, 148, 160, 255));</string>
+                  </property>
+                  <widget class="QLabel" name="GOWPRICE_label">
+                   <property name="geometry">
+                    <rect>
+                     <x>145</x>
+                     <y>20</y>
+                     <width>111</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(119, 125, 145);
+color: rgb(173, 214, 26);
+</string>
+                   </property>
+                   <property name="text">
+                    <string>49.99$</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                  <widget class="QPushButton" name="GOWBUY_pushButton">
+                   <property name="geometry">
+                    <rect>
+                     <x>260</x>
+                     <y>20</y>
+                     <width>41</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(160, 200, 24);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="GOW_label">
+                   <property name="geometry">
+                    <rect>
+                     <x>10</x>
+                     <y>20</y>
+                     <width>111</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgba(0, 0, 0, 0);
+border:0px;
+color: rgb(255, 255, 255);
+</string>
+                   </property>
+                   <property name="text">
+                    <string>GOD OF WAR:
+RAGNAROK</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </widget>
+               </item>
+               <item row="0" column="2">
+                <widget class="QWidget" name="Stray_widget" native="true">
+                 <property name="minimumSize">
+                  <size>
+                   <width>310</width>
+                   <height>390</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>310</width>
+                   <height>390</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-color: rgb(0,0,0);
+border-style:solid;
+border-width: 1px
+</string>
+                 </property>
+                 <widget class="QPushButton" name="Str_pushButton">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>310</width>
+                    <height>310</height>
+                   </rect>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border: 0px;
+background-color: rgb(170, 255, 255);</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="source.qrc">
+                    <normaloff>:/Stray.png</normaloff>:/Stray.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>310</width>
+                    <height>310</height>
+                   </size>
+                  </property>
+                 </widget>
+                 <widget class="QWidget" name="Str_widget" native="true">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>310</y>
+                    <width>310</width>
+                    <height>80</height>
+                   </rect>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: qlineargradient(spread:reflect, x1:0.529, y1:0.994318, x2:0, y2:0.71, stop:0 rgba(150, 203, 214, 255), stop:1 rgba(108, 148, 160, 255));</string>
+                  </property>
+                  <widget class="QLabel" name="StrPRICE_label">
+                   <property name="geometry">
+                    <rect>
+                     <x>145</x>
+                     <y>20</y>
+                     <width>111</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(119, 125, 145);
+color: rgb(173, 214, 26);
+</string>
+                   </property>
+                   <property name="text">
+                    <string>29.99$</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="Str_label">
+                   <property name="geometry">
+                    <rect>
+                     <x>10</x>
+                     <y>30</y>
+                     <width>71</width>
+                     <height>21</height>
+                    </rect>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgba(0, 0, 0, 0);
+border:0px;
+color: rgb(255, 255, 255);
+</string>
+                   </property>
+                   <property name="text">
+                    <string> STRAY</string>
+                   </property>
+                  </widget>
+                  <widget class="QPushButton" name="StrBUY_pushButton">
+                   <property name="geometry">
+                    <rect>
+                     <x>260</x>
+                     <y>20</y>
+                     <width>41</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(160, 200, 24);
+</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </widget>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QWidget" name="PlagueTale_widget" native="true">
+                 <property name="minimumSize">
+                  <size>
+                   <width>310</width>
+                   <height>390</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>310</width>
+                   <height>390</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-color: rgb(0,0,0);
+border-style:solid;
+border-width: 1px
+</string>
+                 </property>
+                 <widget class="QPushButton" name="PT_pushButton">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>310</width>
+                    <height>310</height>
+                   </rect>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border: 0px;
+background-color: rgb(170, 255, 255);</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="source.qrc">
+                    <normaloff>:/PlagueTale.png</normaloff>:/PlagueTale.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>310</width>
+                    <height>310</height>
+                   </size>
+                  </property>
+                 </widget>
+                 <widget class="QWidget" name="PT_widget" native="true">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>310</y>
+                    <width>310</width>
+                    <height>80</height>
+                   </rect>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: qlineargradient(spread:reflect, x1:0.529, y1:0.994318, x2:0, y2:0.71, stop:0 rgba(150, 203, 214, 255), stop:1 rgba(108, 148, 160, 255));</string>
+                  </property>
+                  <widget class="QLabel" name="PTPRICE_label">
+                   <property name="geometry">
+                    <rect>
+                     <x>145</x>
+                     <y>20</y>
+                     <width>111</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(119, 125, 145);
+color: rgb(173, 214, 26);
+</string>
+                   </property>
+                   <property name="text">
+                    <string>49.99$</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                  <widget class="QPushButton" name="PTBUY_pushButton">
+                   <property name="geometry">
+                    <rect>
+                     <x>260</x>
+                     <y>20</y>
+                     <width>41</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(160, 200, 24);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="PT_label">
+                   <property name="geometry">
+                    <rect>
+                     <x>10</x>
+                     <y>20</y>
+                     <width>131</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgba(0, 0, 0, 0);
+border:0px;
+color: rgb(255, 255, 255);
+</string>
+                   </property>
+                   <property name="text">
+                    <string>A PLAGUE TALE:
+REQUEM</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QWidget" name="Horizon_widget" native="true">
+                 <property name="minimumSize">
+                  <size>
+                   <width>310</width>
+                   <height>390</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>310</width>
+                   <height>390</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-color: rgb(0,0,0);
+border-style:solid;
+border-width: 1px
+</string>
+                 </property>
+                 <widget class="QPushButton" name="HFW_pushButton">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>310</width>
+                    <height>310</height>
+                   </rect>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border: 0px;
+background-color: rgb(170, 255, 255);</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="source.qrc">
+                    <normaloff>:/Horizon.png</normaloff>:/Horizon.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>310</width>
+                    <height>310</height>
+                   </size>
+                  </property>
+                 </widget>
+                 <widget class="QWidget" name="HFW_widget" native="true">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>310</y>
+                    <width>310</width>
+                    <height>80</height>
+                   </rect>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: qlineargradient(spread:reflect, x1:0.529, y1:0.994318, x2:0, y2:0.71, stop:0 rgba(150, 203, 214, 255), stop:1 rgba(108, 148, 160, 255));</string>
+                  </property>
+                  <widget class="QLabel" name="HFWPRICE_label">
+                   <property name="geometry">
+                    <rect>
+                     <x>145</x>
+                     <y>20</y>
+                     <width>111</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(119, 125, 145);
+color: rgb(173, 214, 26);
+</string>
+                   </property>
+                   <property name="text">
+                    <string>49.99$</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                  <widget class="QPushButton" name="HFWBUY_pushButton">
+                   <property name="geometry">
+                    <rect>
+                     <x>260</x>
+                     <y>20</y>
+                     <width>41</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(160, 200, 24);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="HFW_label">
+                   <property name="geometry">
+                    <rect>
+                     <x>10</x>
+                     <y>10</y>
+                     <width>131</width>
+                     <height>61</height>
+                    </rect>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgba(0, 0, 0, 0);
+border:0px;
+color: rgb(255, 255, 255);
+</string>
+                   </property>
+                   <property name="text">
+                    <string>HORIZON II:
+FORBIDDEN
+WEST</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </widget>
+               </item>
+               <item row="1" column="2">
+                <widget class="QWidget" name="LastOfUs_widget" native="true">
+                 <property name="minimumSize">
+                  <size>
+                   <width>310</width>
+                   <height>390</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>310</width>
+                   <height>390</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-color: rgb(0,0,0);
+border-style:solid;
+border-width: 1px
+</string>
+                 </property>
+                 <widget class="QPushButton" name="LOU_pushButton">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>310</width>
+                    <height>310</height>
+                   </rect>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border: 0px;
+background-color: rgb(170, 255, 255);</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="source.qrc">
+                    <normaloff>:/TheLastOfUs.png</normaloff>:/TheLastOfUs.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>310</width>
+                    <height>310</height>
+                   </size>
+                  </property>
+                 </widget>
+                 <widget class="QWidget" name="LOU_widget" native="true">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>310</y>
+                    <width>310</width>
+                    <height>80</height>
+                   </rect>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: qlineargradient(spread:reflect, x1:0.529, y1:0.994318, x2:0, y2:0.71, stop:0 rgba(150, 203, 214, 255), stop:1 rgba(108, 148, 160, 255));</string>
+                  </property>
+                  <widget class="QLabel" name="LOUPRICE_label">
+                   <property name="geometry">
+                    <rect>
+                     <x>145</x>
+                     <y>20</y>
+                     <width>111</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(119, 125, 145);
+color: rgb(173, 214, 26);
+</string>
+                   </property>
+                   <property name="text">
+                    <string>49.99$</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                  <widget class="QPushButton" name="LOUBUY_pushButton">
+                   <property name="geometry">
+                    <rect>
+                     <x>260</x>
+                     <y>20</y>
+                     <width>41</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(160, 200, 24);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="LOU_label">
+                   <property name="geometry">
+                    <rect>
+                     <x>10</x>
+                     <y>10</y>
+                     <width>131</width>
+                     <height>61</height>
+                    </rect>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgba(0, 0, 0, 0);
+border:0px;
+color: rgb(255, 255, 255);
+</string>
+                   </property>
+                   <property name="text">
+                    <string>THE LAST
+OF US:
+PART I</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QWidget" name="Cuphead_widget" native="true">
+                 <property name="minimumSize">
+                  <size>
+                   <width>310</width>
+                   <height>390</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>310</width>
+                   <height>390</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-color: rgb(0,0,0);
+border-style:solid;
+border-width: 1px
+</string>
+                 </property>
+                 <widget class="QPushButton" name="Cup_pushButton">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>310</width>
+                    <height>310</height>
+                   </rect>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border: 0px;
+background-color: rgb(170, 255, 255);</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="source.qrc">
+                    <normaloff>:/Cuphead.png</normaloff>:/Cuphead.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>310</width>
+                    <height>310</height>
+                   </size>
+                  </property>
+                 </widget>
+                 <widget class="QWidget" name="Cup_widget" native="true">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>310</y>
+                    <width>310</width>
+                    <height>80</height>
+                   </rect>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: qlineargradient(spread:reflect, x1:0.529, y1:0.994318, x2:0, y2:0.71, stop:0 rgba(150, 203, 214, 255), stop:1 rgba(108, 148, 160, 255));</string>
+                  </property>
+                  <widget class="QLabel" name="CupPRICE_label">
+                   <property name="geometry">
+                    <rect>
+                     <x>145</x>
+                     <y>20</y>
+                     <width>111</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(119, 125, 145);
+color: rgb(173, 214, 26);
+</string>
+                   </property>
+                   <property name="text">
+                    <string>7.99$</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                  <widget class="QPushButton" name="CupBUY_pushButton">
+                   <property name="geometry">
+                    <rect>
+                     <x>260</x>
+                     <y>20</y>
+                     <width>41</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(160, 200, 24);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="Cup_label">
+                   <property name="geometry">
+                    <rect>
+                     <x>10</x>
+                     <y>10</y>
+                     <width>131</width>
+                     <height>61</height>
+                    </rect>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgba(0, 0, 0, 0);
+border:0px;
+color: rgb(255, 255, 255);
+</string>
+                   </property>
+                   <property name="text">
+                    <string>CUPHEAD:
+THE DELICIOUS
+LAST COURSE</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QWidget" name="DyingLight_widget" native="true">
+                 <property name="minimumSize">
+                  <size>
+                   <width>310</width>
+                   <height>390</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>310</width>
+                   <height>390</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-color: rgb(0,0,0);
+border-style:solid;
+border-width: 1px
+</string>
+                 </property>
+                 <widget class="QPushButton" name="DL_pushButton">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>310</width>
+                    <height>310</height>
+                   </rect>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border: 0px;
+background-color: rgb(170, 255, 255);</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="source.qrc">
+                    <normaloff>:/DyingLight.png</normaloff>:/DyingLight.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>310</width>
+                    <height>310</height>
+                   </size>
+                  </property>
+                 </widget>
+                 <widget class="QWidget" name="DL_widget" native="true">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>310</y>
+                    <width>310</width>
+                    <height>80</height>
+                   </rect>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: qlineargradient(spread:reflect, x1:0.529, y1:0.994318, x2:0, y2:0.71, stop:0 rgba(150, 203, 214, 255), stop:1 rgba(108, 148, 160, 255));</string>
+                  </property>
+                  <widget class="QLabel" name="DLPRICE_label">
+                   <property name="geometry">
+                    <rect>
+                     <x>145</x>
+                     <y>20</y>
+                     <width>111</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(119, 125, 145);
+color: rgb(173, 214, 26);
+</string>
+                   </property>
+                   <property name="text">
+                    <string>59.99$</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                  <widget class="QPushButton" name="DLBUY_pushButton">
+                   <property name="geometry">
+                    <rect>
+                     <x>260</x>
+                     <y>20</y>
+                     <width>41</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(160, 200, 24);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="DL_label">
+                   <property name="geometry">
+                    <rect>
+                     <x>10</x>
+                     <y>30</y>
+                     <width>131</width>
+                     <height>21</height>
+                    </rect>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgba(0, 0, 0, 0);
+border:0px;
+color: rgb(255, 255, 255);
+</string>
+                   </property>
+                   <property name="text">
+                    <string>DYING LIGHT 2</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </widget>
+               </item>
+               <item row="2" column="2">
+                <widget class="QWidget" name="Warhammer_widget" native="true">
+                 <property name="minimumSize">
+                  <size>
+                   <width>310</width>
+                   <height>390</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>310</width>
+                   <height>390</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-color: rgb(0,0,0);
+border-style:solid;
+border-width: 1px
+</string>
+                 </property>
+                 <widget class="QPushButton" name="War_pushButton">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>310</width>
+                    <height>310</height>
+                   </rect>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border: 0px;
+background-color: rgb(170, 255, 255);</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="source.qrc">
+                    <normaloff>:/Warhammer.jpg</normaloff>:/Warhammer.jpg</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>310</width>
+                    <height>310</height>
+                   </size>
+                  </property>
+                 </widget>
+                 <widget class="QWidget" name="War_widget" native="true">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>310</y>
+                    <width>310</width>
+                    <height>80</height>
+                   </rect>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: qlineargradient(spread:reflect, x1:0.529, y1:0.994318, x2:0, y2:0.71, stop:0 rgba(150, 203, 214, 255), stop:1 rgba(108, 148, 160, 255));</string>
+                  </property>
+                  <widget class="QLabel" name="WarPRICE_label">
+                   <property name="geometry">
+                    <rect>
+                     <x>145</x>
+                     <y>20</y>
+                     <width>111</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(119, 125, 145);
+color: rgb(173, 214, 26);
+</string>
+                   </property>
+                   <property name="text">
+                    <string>25.99$</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                  <widget class="QPushButton" name="WarBUY_pushButton">
+                   <property name="geometry">
+                    <rect>
+                     <x>260</x>
+                     <y>20</y>
+                     <width>41</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(160, 200, 24);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="War_label">
+                   <property name="geometry">
+                    <rect>
+                     <x>10</x>
+                     <y>10</y>
+                     <width>111</width>
+                     <height>61</height>
+                    </rect>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgba(0, 0, 0, 0);
+border:0px;
+color: rgb(255, 255, 255);
+</string>
+                   </property>
+                   <property name="text">
+                    <string>WARHAMMER
+40000
+DARKTIDE</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QLabel" name="LeftBorder_label">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>55</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: qlineargradient(spread:pad, x1:0.182, y1:0.0284091, x2:0.307, y2:0.573864, stop:0 rgba(74, 79, 90, 255), stop:1 rgba(125, 134, 152, 255));
+background-color: rgba(0, 0, 0, 0);</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="source.qrc"/>
+ </resources>
+ <connections/>
+</ui>

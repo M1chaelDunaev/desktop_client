@@ -85,6 +85,9 @@ void LoginWindow::on_Sign_in_button_clicked()
             if(rememberMe_activated)
                 mainApp->setRemembrance(id);
 
+            mainApp->mainWindow->setAccount(id);
+            hide();
+            //showMainWindow
             return;
         }
     };

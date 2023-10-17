@@ -22,9 +22,24 @@ enum class SecretQuestionTypes
     FIRST_PHONE_MODEL = 60
 };
 
+class Lib
+{
+public:
+    bool eldenRing = false;
+    bool godOfWar = false;
+    bool stray = false;
+    bool plagueTale = false;
+    bool horizon = false;
+    bool lastOfUs = false;
+    bool cuphead = false;
+    bool dyingLight = false;
+    bool warhammer = false;
+};
+
 class UserAccount
 {    
 public:
+    int id;
     QString email;
     QString country;
     QString password;
@@ -36,6 +51,8 @@ public:
     SecretQuestionTypes sq_type;
     QString sq_answer;
     double balance;
+
+    Lib lib;
 
     UserAccount();
 };

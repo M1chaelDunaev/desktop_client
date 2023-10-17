@@ -2,29 +2,11 @@
 #include <QTextStream>
 #include <QSqlDatabase>
 #include <QSqlQuery>
-#include <QSqlError>
 #include <QDebug>
 #include <QString>
-#include <QSqlRecord>
+#include <QCryptographicHash>
 
 #include "mainapplication.h"
-
-void MainApplication::addAdminAccount()
-{
-    QSqlQuery query(*dataBase);
-    QString q = "";
-    q += "INSERT INTO 'ListOfUsers'('FirstName', 'SecondName', 'Email', 'Password') ";
-    q += "VALUES('Michael', 'Dunaev', 'md@mail.com', 'MiDu');";
-    auto res = query.exec(q);
-    if(res)
-        qDebug("Success insert");
-    else
-        qDebug("Failed insert");
-
-    auto error = query.lastError().text().toStdString();
-
-    qDebug(error.c_str());
-}
 
 MainApplication::MainApplication()
 {
@@ -32,6 +14,8 @@ MainApplication::MainApplication()
     logWindow = new LoginWindow(this);
     regWindow = new RegistrationWindow(this);
     finregWindow = new RegistrationWindowFinal(this);
+    mainWindow = new MainWindow(this);
+
     buffer = new UserAccount();
 
     if(!getInitStatus())
@@ -72,8 +56,13 @@ void MainApplication::init()
     file.open(QIODevice::ReadWrite);
     QTextStream stream2(&file);
     stream2 << 0;
+    file.close();
 
-    dataBase->setDatabaseName("./users.db");
+    file.setFileName("users.db");
+    file.open(QIODevice::ReadWrite);
+    file.close();
+
+    dataBase->setDatabaseName("users.db");
     dataBase->open();
 
     QSqlQuery query(*dataBase);
@@ -84,7 +73,7 @@ void MainApplication::init()
         " 'SecondName' VARCHAR(40), "
         " 'DateOfBirth' VARCHAR(10), "
         " 'Email' VARCHAR(50), "
-        " 'Password' VARCHAR(50), "
+        " 'Password' VARCHAR(64), "
         " 'PhoneNumber' VARCHAR(13), "
         " 'Country' VARCHAR(25), "
         " 'Balance' FLOAT, "
@@ -93,6 +82,11 @@ void MainApplication::init()
         ");";
     query.exec(q);
     dataBase->close();
+
+    file.setFileName("init_status.txt");
+    file.open(QIODevice::ReadWrite | QIODevice::Truncate);
+    QTextStream stream3(&file);
+    stream3 << 1;
 }
 
 bool MainApplication::getInitStatus()
@@ -103,7 +97,6 @@ bool MainApplication::getInitStatus()
 
     int status;
     stream >> status;
-
 
     if(status == 1)
         return true;
@@ -169,7 +162,7 @@ void MainApplication::addAccount()
     q += ("'" + buffer->secondName + "', ");
     q += ("'" + buffer->birthDate + "', ");
     q += ("'" + buffer->email + "', ");
-    q += ("'" + buffer->password + "', ");
+    q += ("'" + getHash(buffer->password) + "', ");
     q += ("'" + buffer->phoneNumber + "', ");
     q += ("'" + buffer->country + "', ");
     q += ("'0.0', ");
@@ -179,6 +172,18 @@ void MainApplication::addAccount()
     query.exec(q);
     dataBase->close();
     incrementCountOfUsers();
+}
+
+void MainApplication::showMainWindow()
+{
+    mainWindow->show();
+}
+
+QString MainApplication::getHash(const QString &_password)
+{
+    auto res = QCryptographicHash::hash(_password.toUtf8(), QCryptographicHash::Sha256);
+
+    return {res.toHex()};
 }
 
 QString MainApplication::lineEdit_StyleSheet()
@@ -213,7 +218,7 @@ SearchResult MainApplication::findAccount(int &result_id, QString _email, QStrin
     if(!query.first())
         return SearchResult::EMAIL_NOT_FOUND;
 
-    if(query.value(1).toString() != _password)
+    if(query.value(1).toString() != getHash(_password))
         return SearchResult::EMAIL_FOUND_WRONG_PASSWORD;
 
     result_id = query.value(0).toInt();
