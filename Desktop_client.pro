@@ -22,8 +22,11 @@ SOURCES += \
     registrationwindowfinal.cpp \
     settings.cpp \
     store.cpp \
+    storeitem.cpp \
+    support.cpp \
+    test.cpp \
     useraccount.cpp \
-    userarea.cpp
+    wallet.cpp
 
 HEADERS += \
     accountarea.h \
@@ -38,8 +41,11 @@ HEADERS += \
     registrationwindowfinal.h \
     settings.h \
     store.h \
+    storeitem.h \
+    support.h \
+    test.h \
     useraccount.h \
-    userarea.h
+    wallet.h
 
 FORMS += \
     accountarea.ui \
@@ -52,7 +58,9 @@ FORMS += \
     registrationwindowfinal.ui \
     settings.ui \
     store.ui \
-    userarea.ui
+    storeitem.ui \
+    support.ui \
+    wallet.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

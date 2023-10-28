@@ -34,6 +34,29 @@ public:
     bool cuphead = false;
     bool dyingLight = false;
     bool warhammer = false;
+
+    void setValues(const QString& _res)
+    {
+        bool boolArray[9];
+        for(int i = 0; i < 9; ++i)
+        {
+            if(_res[i] == '1')
+                boolArray[i] = true;
+            else
+                boolArray[i] = false;
+        }
+
+
+        eldenRing = boolArray[0];
+        godOfWar = boolArray[1];
+        stray = boolArray[2];
+        plagueTale = boolArray[3];
+        horizon = boolArray[4];
+        lastOfUs = boolArray[5];
+        cuphead = boolArray[6];
+        dyingLight = boolArray[7];
+        warhammer = boolArray[8];
+    }
 };
 
 class UserAccount
@@ -43,6 +66,7 @@ public:
     QString email;
     QString country;
     QString password;
+    QString userName;
 
     QString fisrtName;
     QString secondName;

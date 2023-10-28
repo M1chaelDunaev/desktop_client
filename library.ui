@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1077</width>
+    <width>1092</width>
     <height>669</height>
    </rect>
   </property>
@@ -14,8 +14,7 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">
-</string>
+   <string notr="true"/>
   </property>
   <layout class="QVBoxLayout" name="Main">
    <property name="spacing">
@@ -85,7 +84,7 @@
              <number>0</number>
             </property>
             <item>
-             <widget class="QWidget" name="widget" native="true">
+             <widget class="QWidget" name="ER_widget" native="true">
               <property name="minimumSize">
                <size>
                 <width>200</width>
@@ -105,7 +104,7 @@ background-color: rgb(161, 171, 195);
 }
 </string>
               </property>
-              <widget class="QLabel" name="GameIcon">
+              <widget class="QLabel" name="ER_Icon">
                <property name="geometry">
                 <rect>
                  <x>10</x>
@@ -133,7 +132,7 @@ background-color: rgb(161, 171, 195);
                 <string/>
                </property>
               </widget>
-              <widget class="QPushButton" name="Game">
+              <widget class="QPushButton" name="ER_pushButton">
                <property name="geometry">
                 <rect>
                  <x>40</x>
@@ -163,13 +162,13 @@ background-color: rgb(161, 171, 195);
 }</string>
                </property>
                <property name="text">
-                <string>PushButton</string>
+                <string>Game 1</string>
                </property>
               </widget>
              </widget>
             </item>
             <item>
-             <widget class="QWidget" name="widget_2" native="true">
+             <widget class="QWidget" name="GOW_widget" native="true">
               <property name="minimumSize">
                <size>
                 <width>200</width>
@@ -189,7 +188,7 @@ background-color: rgb(161, 171, 195);
 }
 </string>
               </property>
-              <widget class="QLabel" name="GameIcon_2">
+              <widget class="QLabel" name="GOW_icon">
                <property name="geometry">
                 <rect>
                  <x>10</x>
@@ -217,7 +216,7 @@ background-color: rgb(161, 171, 195);
                 <string/>
                </property>
               </widget>
-              <widget class="QPushButton" name="Game_2">
+              <widget class="QPushButton" name="GOW_button">
                <property name="geometry">
                 <rect>
                  <x>40</x>
@@ -247,13 +246,13 @@ background-color: rgb(161, 171, 195);
 }</string>
                </property>
                <property name="text">
-                <string>PushButton</string>
+                <string>Game 2</string>
                </property>
               </widget>
              </widget>
             </item>
             <item>
-             <widget class="QWidget" name="widget_3" native="true">
+             <widget class="QWidget" name="Str_widget" native="true">
               <property name="minimumSize">
                <size>
                 <width>200</width>
@@ -273,7 +272,7 @@ background-color: rgb(161, 171, 195);
 }
 </string>
               </property>
-              <widget class="QLabel" name="GameIcon_3">
+              <widget class="QLabel" name="Str_icon">
                <property name="geometry">
                 <rect>
                  <x>10</x>
@@ -301,7 +300,7 @@ background-color: rgb(161, 171, 195);
                 <string/>
                </property>
               </widget>
-              <widget class="QPushButton" name="Game_3">
+              <widget class="QPushButton" name="Str_button">
                <property name="geometry">
                 <rect>
                  <x>40</x>
@@ -331,13 +330,13 @@ background-color: rgb(161, 171, 195);
 }</string>
                </property>
                <property name="text">
-                <string>PushButton</string>
+                <string>Game 3</string>
                </property>
               </widget>
              </widget>
             </item>
             <item>
-             <widget class="QWidget" name="widget_4" native="true">
+             <widget class="QWidget" name="PT_widget" native="true">
               <property name="minimumSize">
                <size>
                 <width>200</width>
@@ -357,7 +356,7 @@ background-color: rgb(161, 171, 195);
 }
 </string>
               </property>
-              <widget class="QLabel" name="GameIcon_4">
+              <widget class="QLabel" name="PT_icon">
                <property name="geometry">
                 <rect>
                  <x>10</x>
@@ -385,7 +384,7 @@ background-color: rgb(161, 171, 195);
                 <string/>
                </property>
               </widget>
-              <widget class="QPushButton" name="Game_4">
+              <widget class="QPushButton" name="PT_button">
                <property name="geometry">
                 <rect>
                  <x>40</x>
@@ -415,13 +414,13 @@ background-color: rgb(161, 171, 195);
 }</string>
                </property>
                <property name="text">
-                <string>PushButton</string>
+                <string>1</string>
                </property>
               </widget>
              </widget>
             </item>
             <item>
-             <widget class="QWidget" name="widget_5" native="true">
+             <widget class="QWidget" name="HFW_widget" native="true">
               <property name="minimumSize">
                <size>
                 <width>200</width>
@@ -441,7 +440,7 @@ background-color: rgb(161, 171, 195);
 }
 </string>
               </property>
-              <widget class="QLabel" name="GameIcon_5">
+              <widget class="QLabel" name="HFW_icon">
                <property name="geometry">
                 <rect>
                  <x>10</x>
@@ -469,7 +468,7 @@ background-color: rgb(161, 171, 195);
                 <string/>
                </property>
               </widget>
-              <widget class="QPushButton" name="Game_5">
+              <widget class="QPushButton" name="HWF_button">
                <property name="geometry">
                 <rect>
                  <x>40</x>
@@ -499,13 +498,13 @@ background-color: rgb(161, 171, 195);
 }</string>
                </property>
                <property name="text">
-                <string>PushButton</string>
+                <string>2</string>
                </property>
               </widget>
              </widget>
             </item>
             <item>
-             <widget class="QWidget" name="widget_6" native="true">
+             <widget class="QWidget" name="LOU_widget" native="true">
               <property name="minimumSize">
                <size>
                 <width>200</width>
@@ -525,7 +524,7 @@ background-color: rgb(161, 171, 195);
 }
 </string>
               </property>
-              <widget class="QLabel" name="GameIcon_6">
+              <widget class="QLabel" name="LOU_icon">
                <property name="geometry">
                 <rect>
                  <x>10</x>
@@ -553,7 +552,7 @@ background-color: rgb(161, 171, 195);
                 <string/>
                </property>
               </widget>
-              <widget class="QPushButton" name="Game_6">
+              <widget class="QPushButton" name="LOU_button">
                <property name="geometry">
                 <rect>
                  <x>40</x>
@@ -583,13 +582,13 @@ background-color: rgb(161, 171, 195);
 }</string>
                </property>
                <property name="text">
-                <string>PushButton</string>
+                <string>3</string>
                </property>
               </widget>
              </widget>
             </item>
             <item>
-             <widget class="QWidget" name="widget_7" native="true">
+             <widget class="QWidget" name="Cup_widget" native="true">
               <property name="minimumSize">
                <size>
                 <width>200</width>
@@ -609,7 +608,7 @@ background-color: rgb(161, 171, 195);
 }
 </string>
               </property>
-              <widget class="QLabel" name="GameIcon_7">
+              <widget class="QLabel" name="Cup_icon">
                <property name="geometry">
                 <rect>
                  <x>10</x>
@@ -637,7 +636,7 @@ background-color: rgb(161, 171, 195);
                 <string/>
                </property>
               </widget>
-              <widget class="QPushButton" name="Game_7">
+              <widget class="QPushButton" name="Cup_button">
                <property name="geometry">
                 <rect>
                  <x>40</x>
@@ -667,13 +666,13 @@ background-color: rgb(161, 171, 195);
 }</string>
                </property>
                <property name="text">
-                <string>PushButton</string>
+                <string>4</string>
                </property>
               </widget>
              </widget>
             </item>
             <item>
-             <widget class="QWidget" name="widget_8" native="true">
+             <widget class="QWidget" name="DL_widget" native="true">
               <property name="minimumSize">
                <size>
                 <width>200</width>
@@ -693,7 +692,7 @@ background-color: rgb(161, 171, 195);
 }
 </string>
               </property>
-              <widget class="QLabel" name="GameIcon_8">
+              <widget class="QLabel" name="DL_icon">
                <property name="geometry">
                 <rect>
                  <x>10</x>
@@ -721,7 +720,7 @@ background-color: rgb(161, 171, 195);
                 <string/>
                </property>
               </widget>
-              <widget class="QPushButton" name="Game_8">
+              <widget class="QPushButton" name="DL_button">
                <property name="geometry">
                 <rect>
                  <x>40</x>
@@ -751,13 +750,13 @@ background-color: rgb(161, 171, 195);
 }</string>
                </property>
                <property name="text">
-                <string>PushButton</string>
+                <string>5</string>
                </property>
               </widget>
              </widget>
             </item>
             <item>
-             <widget class="QWidget" name="widget_9" native="true">
+             <widget class="QWidget" name="War_widget" native="true">
               <property name="minimumSize">
                <size>
                 <width>200</width>
@@ -777,7 +776,7 @@ background-color: rgb(161, 171, 195);
 }
 </string>
               </property>
-              <widget class="QLabel" name="GameIcon_9">
+              <widget class="QLabel" name="War_icon">
                <property name="geometry">
                 <rect>
                  <x>10</x>
@@ -805,7 +804,7 @@ background-color: rgb(161, 171, 195);
                 <string/>
                </property>
               </widget>
-              <widget class="QPushButton" name="Game_9">
+              <widget class="QPushButton" name="War_button">
                <property name="geometry">
                 <rect>
                  <x>40</x>
@@ -835,7 +834,7 @@ background-color: rgb(161, 171, 195);
 }</string>
                </property>
                <property name="text">
-                <string>PushButton</string>
+                <string>6</string>
                </property>
               </widget>
              </widget>

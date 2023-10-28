@@ -99,7 +99,7 @@ void RegistrationWindow::on_Registration_button_clicked()
     SearchResult res = mainApp->findAccount(none, email, "");
     if(res == SearchResult::EMAIL_FOUND_WRONG_PASSWORD)
     {
-        ui->Error_window_label->setText("User with the same email already exists.");
+        ui->Error_window_label->setText("User with the same email is already exists.");
         ui->Email_lineEdit->setStyleSheet(mainApp->lineEditError_StyleSheet());
         return;
     }

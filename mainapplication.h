@@ -8,6 +8,7 @@
 #include "registrationwindowfinal.h"
 #include "mainwindow.h"
 #include "useraccount.h"
+#include "support.h"
 
 
 enum class SearchResult
@@ -24,6 +25,7 @@ class MainApplication
     friend class RegistrationWindow;
     friend class RegistrationWindowFinal;
     friend class MainWindow;
+    friend class Support;
 
     //private members:
     QSqlDatabase* dataBase;
@@ -31,6 +33,7 @@ class MainApplication
     RegistrationWindow* regWindow;
     RegistrationWindowFinal* finregWindow;
     MainWindow* mainWindow;
+    Support* support;
 
     UserAccount* buffer;
 
@@ -45,6 +48,11 @@ class MainApplication
     int getCountOfUsers();
 
     void addAccount();
+    void updateUserAccount(int _id, const QString& _field, const QString& _value);
+    void updateUserBalance(int _id, double _balance);
+    void updateUserLibrary(int _id, const QString& _lib);
+
+    void setMainWindow(int _id);
 
     QString getHash(const QString& _pass);
 

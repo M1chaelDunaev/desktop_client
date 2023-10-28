@@ -2,7 +2,8 @@
 #define LIBRARY_H
 
 #include <QWidget>
-
+#include "mainwindow.h"
+class MainWindow;
 namespace Ui {
 class Library;
 }
@@ -10,13 +11,13 @@ class Library;
 class Library : public QWidget
 {
     Q_OBJECT
-
-public:
-    explicit Library(QWidget *parent = nullptr);
-    ~Library();
-
-private:
     Ui::Library *ui;
+
+    MainWindow* mainWindow;
+    void setGameList();
+public:
+    explicit Library(MainWindow* _mainWindow);
+    ~Library();
 };
 
 #endif // LIBRARY_H

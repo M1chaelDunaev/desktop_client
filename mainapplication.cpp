@@ -14,7 +14,8 @@ MainApplication::MainApplication()
     logWindow = new LoginWindow(this);
     regWindow = new RegistrationWindow(this);
     finregWindow = new RegistrationWindowFinal(this);
-    mainWindow = new MainWindow(this);
+    support = new Support();
+    mainWindow = nullptr;
 
     buffer = new UserAccount();
 
@@ -30,7 +31,9 @@ MainApplication::~MainApplication()
     delete dataBase;
     delete logWindow;
     delete regWindow;
+    delete mainWindow;
     delete buffer;
+    delete support;
 }
 
 void MainApplication::exec()
@@ -38,9 +41,19 @@ void MainApplication::exec()
     int remembrance = getRemembrance();
 
     if(remembrance == -1)
-        showLoginWindow();
+    {
+        logWindow->show();
+    }
+    else
+    {
+        setMainWindow(remembrance);
+    }
+}
 
-    //....
+void MainApplication::setMainWindow(int _id)
+{
+    mainWindow = new MainWindow(this, _id);
+    mainWindow->show();
 }
 
 void MainApplication::init()
@@ -68,12 +81,13 @@ void MainApplication::init()
     QSqlQuery query(*dataBase);
     QString q = "";
     q += "CREATE TABLE 'ListOfUsers'("
-        " 'ID' INT AUTO_INCREMENT PRIMARY_KEY, "
+        " 'ID' INT PRIMARY_KEY, "
         " 'FirstName' VARCHAR(40), "
         " 'SecondName' VARCHAR(40), "
         " 'DateOfBirth' VARCHAR(10), "
         " 'Email' VARCHAR(50), "
         " 'Password' VARCHAR(64), "
+        " 'UserName' VARCHAR(30), "
         " 'PhoneNumber' VARCHAR(13), "
         " 'Country' VARCHAR(25), "
         " 'Balance' FLOAT, "
@@ -81,6 +95,15 @@ void MainApplication::init()
         " 'SecretQuestionAnswer' VARCHAR(50) "
         ");";
     query.exec(q);
+
+    q.clear();
+    query.clear();
+
+    q += "CREATE TABLE 'UserLibraries'("
+         "'ID' INT PRIMARY_KEY, "
+         "'Games' VARCHAR(9));";
+    query.exec(q);
+
     dataBase->close();
 
     file.setFileName("init_status.txt");
@@ -153,14 +176,15 @@ void MainApplication::addAccount()
     dataBase->open();
     QSqlQuery query(*dataBase);
     QString q = "";
-    q += "INSERT INTO 'ListOfUsers' "
-         "(ID, FirstName, SecondName, DateOfBirth, Email, Password,"
+    q += "INSERT INTO ListOfUsers"
+         "(ID, FirstName, SecondName, DateOfBirth, Email, UserName,Password,"
          " PhoneNumber, Country, Balance, SecretQuestionType, SecretQuestionAnswer)"
          " VALUES(";
     q += ("'" + QString::number(getCountOfUsers()) + "', ");
     q += ("'" + buffer->fisrtName + "', ");
     q += ("'" + buffer->secondName + "', ");
     q += ("'" + buffer->birthDate + "', ");
+    q += ("'" + buffer->email + "', ");
     q += ("'" + buffer->email + "', ");
     q += ("'" + getHash(buffer->password) + "', ");
     q += ("'" + buffer->phoneNumber + "', ");
@@ -170,6 +194,15 @@ void MainApplication::addAccount()
     q += ("'" + buffer->sq_answer + "'); ");
 
     query.exec(q);
+
+    q.clear();
+    query.clear();
+    q += "INSERT INTO UserLibraries"
+         "(ID, Games) VALUES("
+         "'" + QString::number(getCountOfUsers()) + "', "
+         "'000000000');";
+    query.exec(q);
+
     dataBase->close();
     incrementCountOfUsers();
 }
@@ -190,8 +223,8 @@ QString MainApplication::lineEdit_StyleSheet()
 {
     QString styleSheet = "";
     styleSheet += "color: rgb(255, 255, 255);"
-                  "background-color: rgb(74, 79, 90);"
-                  "font: 11pt Segoe UI;";
+                  "background-color: rgb(74, 79, 90);";
+
 
     return styleSheet;
 }
